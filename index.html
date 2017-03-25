@@ -61,6 +61,45 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-angular" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/25/angular/" class="article-date">
+  <time datetime="2017-03-25T06:41:06.000Z" itemprop="datePublished">2017-03-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/25/angular/">angular</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="angular怎么用"><a href="#angular怎么用" class="headerlink" title="angular怎么用"></a>angular怎么用</h2><ul>
+<li>处理数据，前后端分离的框架，双向数据绑定，扩展标签(自定义指令)的功能，模块化，单页开发(头尾不动，只动中间)</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/03/25/angular/" data-id="cj0ow09yj0000hcq9eah2j62a" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-git" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/12/14/git/" class="article-date">
@@ -96,8 +135,8 @@
 <h2 id="初始化git"><a href="#初始化git" class="headerlink" title="初始化git"></a>初始化git</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init</div></pre></td></tr></table></figure>
 <blockquote>
 <p>.git文件存储着所有内容（提交，版本库，标签），初始化后会给一个分支默认叫master</p>
-<h2 id="创建文件夹-1"><a href="#创建文件夹-1" class="headerlink" title="创建文件夹"></a>创建文件夹</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">touch hello.js</div></pre></td></tr></table></figure>
 </blockquote>
+<h2 id="创建文件夹-1"><a href="#创建文件夹-1" class="headerlink" title="创建文件夹"></a>创建文件夹</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">touch hello.js</div></pre></td></tr></table></figure>
 <h2 id="查看文件内容"><a href="#查看文件内容" class="headerlink" title="查看文件内容"></a>查看文件内容</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cat hello.js</div></pre></td></tr></table></figure>
 <h2 id="向文件中写入内容"><a href="#向文件中写入内容" class="headerlink" title="向文件中写入内容"></a>向文件中写入内容</h2><ul>
 <li>如果文件不存在则会创建文件<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">echo &apos;要写入的内容&apos; &gt; &apos;文件名&apos;</div><div class="line">&gt;  会覆盖</div><div class="line">&gt;&gt; 叠加</div></pre></td></tr></table></figure>
@@ -107,8 +146,8 @@
 <h2 id="编辑文件"><a href="#编辑文件" class="headerlink" title="编辑文件"></a>编辑文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vi hello.js</div></pre></td></tr></table></figure>
 <blockquote>
 <p>进入插入模式 i ,esc退出,:wq保存并且退出</p>
-<h2 id="查看git状态"><a href="#查看git状态" class="headerlink" title="查看git状态"></a>查看git状态</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git status</div></pre></td></tr></table></figure>
 </blockquote>
+<h2 id="查看git状态"><a href="#查看git状态" class="headerlink" title="查看git状态"></a>查看git状态</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git status</div></pre></td></tr></table></figure>
 <h2 id="增加暂存区"><a href="#增加暂存区" class="headerlink" title="增加暂存区"></a>增加暂存区</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add . /-A</div></pre></td></tr></table></figure>
 <blockquote>
 <p>没有增加前是红色</p>
@@ -148,10 +187,12 @@
 </ul>
 <blockquote>
 <p>相当于把master复制了一份，提交到dev上master才看不到，相当于dev把100块钱放到自己家了，那master就无法看到了</p>
+</blockquote>
 <ul>
 <li>删除分支<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch -D 分支名</div></pre></td></tr></table></figure>
 </li>
 </ul>
+<blockquote>
 <p>不能自己删除自己</p>
 </blockquote>
 <h2 id="创建分支并且切换分支"><a href="#创建分支并且切换分支" class="headerlink" title="创建分支并且切换分支"></a>创建分支并且切换分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git branch dev</div><div class="line">git checkout dev</div><div class="line"></div><div class="line">git checkout -b dev</div></pre></td></tr></table></figure>
@@ -175,44 +216,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/14/git/" data-id="ciwodtc46000250q9vnxe6ydz" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-angular" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/08/21/angular/" class="article-date">
-  <time datetime="2016-08-21T02:16:15.000Z" itemprop="datePublished">2016-08-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/21/angular/">angular</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="angular指令"><a href="#angular指令" class="headerlink" title="angular指令"></a>angular指令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">ng-app</div><div class="line">ng-model</div><div class="line">ng-repeat</div><div class="line">ng-controller</div></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/21/angular/" data-id="ciwodtc3r000050q9m4s52iq7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/12/14/git/" data-id="cizfgs9jk000080q9vzciokpa" class="article-share-link">Share</a>
       
       
     </footer>
@@ -257,7 +261,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/21/hello-world/" data-id="ciwodtc40000150q9n16q4ek3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/08/21/hello-world/" data-id="cizfgs9ko000380q9pjlemx63" class="article-share-link">Share</a>
       
       
     </footer>
@@ -284,7 +288,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li></ul>
     </div>
   </div>
 
@@ -297,11 +301,11 @@
       <ul>
         
           <li>
-            <a href="/2016/12/14/git/">git</a>
+            <a href="/2017/03/25/angular/">angular</a>
           </li>
         
           <li>
-            <a href="/2016/08/21/angular/">angular</a>
+            <a href="/2016/12/14/git/">git</a>
           </li>
         
           <li>
@@ -320,7 +324,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2016 John Doe<br>
+      &copy; 2017 John Doe<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
